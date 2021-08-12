@@ -1,72 +1,202 @@
----
----
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+@article{smartphones,
+    abbr = {Smartphones},
+    journal = {Workshop on Computing within Limits},
+    doi = {10.21428/bf6fb269.69788078},
+    note = {https://limits.pubpub.org/pub/rn94aofn},
+    publisher = {},
+    title = {Stipulated Smartphones for Students: The Requirements of Modern Technology for Academia},
+    url = {https://limits.pubpub.org/pub/rn94aofn},
+    html = {https://limits.pubpub.org/pub/rn94aofn},
+    pdf = {limits21-mcguinness.pdf},
+    author = {McGuinness, Rob and Porter, George},
+    date = {2021-06-14},
+    year = {2021},
+    month = {6},
+    abstract = {Technology has become pervasive in everyday life.
+    College students are required to use internet-enabled computers
+    and smartphones to access and interact with course material, often
+    via browser software. However, the trend of requiring technology disadvantages
+    lower
+    income students. Additionally, the increased cycle of manufacturing, purchasing, and discarding
+    devices comes with an environmental cost in the form of eWaste. Research has been done
+    examining how long users can and do keep devices before discarding them, but we wish to
+    understand this in the context of requirements for college students.
+    In this paper, we examine how well online learning platforms function on older
+    browser software and device hardware. We then perform an analysis over several years
+    of data from a learning management system used at the authors’ university campus. We
+    find that software and hardware become obsolete within roughly a four-year period, meaning
+    students are likely to be required to purchase a new smartphone or laptop during their college
+    careers. In reality, these “obsolete” devices are just as capable as they were
+    when they were new. We advocate for a student-focused solution and examine possible
+    future lines of research in this area.},
+    day = {14},
+    selected = {true},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@inproceedings {opera,
+abbr={Opera},
+author = {William M. Mellette and Rajdeep Das and Yibo Guo and Rob McGuinness and Alex C. Snoeren and George Porter},
+title = {Expanding across time to deliver bandwidth efficiency and low latency},
+booktitle = {17th USENIX Symposium on Networked Systems Design and Implementation (NSDI 20)},
+year = {2020},
+isbn = {978-1-939133-13-7},
+address = {Santa Clara, CA},
+pages = {1--18},
+html = {https://www.usenix.org/conference/nsdi20/presentation/mellette},
+url = {https://www.usenix.org/conference/nsdi20/presentation/mellette},
+pdf = {opera.pdf},
+abstract = {Datacenters need networks that support both low-latency and high-bandwidth
+packet delivery to meet the stringent requirements of modern applications.
+We present Opera, a dynamic network that delivers latency-sensitive traffic quickly by
+relying on multi-hop forwarding in the same way as expander-graph-based approaches,
+but provides near-optimal bandwidth for bulk flows through direct forwarding over time-varying
+source-to-destination circuits. Unlike prior approaches, Opera requires no separate electrical
+network and no active circuit scheduling. The key to Opera's design is the rapid and deterministic
+reconfiguration of the network, piece-by-piece, such that at any moment in time the network implements
+an expander graph, yet, integrated across time, the network provides bandwidth-efficient single-hop paths
+between all racks. We show that Opera supports low-latency traffic with flow completion times
+comparable to cost-equivalent static topologies, while delivering up to 4x the bandwidth for
+all-to-all traffic and supporting up to 60% higher load for published datacenter workloads.},
+url = {https://www.usenix.org/conference/nsdi20/presentation/mellette},
+publisher = {{USENIX} Association},
+month = feb,
+selected = {true}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+@inproceedings{bess,
+abbr={100-Gb/s TDMA},
+author = {McGuinness, Rob and Porter, George},
+title = {Evaluating the Performance of Software NICs for 100-Gb/s Datacenter Traffic Control},
+year = {2018},
+isbn = {9781450359023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3230718.3230728},
+doi = {10.1145/3230718.3230728},
+html = {https://dl.acm.org/doi/abs/10.1145/3230718.3230728},
+pdf = {100g_tdma.pdf},
+abstract = {Modern-day datacenters are constantly evolving and scaling to serve more users. Network
+traffic and flow control is a critical component to enable this trend, and there is
+a significant amount of new research in this space. Researchers need a platform for
+quickly implementing and experimenting with new traffic control mechanisms, while
+keeping up with increasing line rates. We examine the feasibility of implementing
+new methods of traffic control in software NICs. We analyze their ability to implement
+traffic control mechanisms at 40- and 100-Gb/s. We find that while they offer a platform
+for rapid prototyping at 40-Gb/s, they cannot (yet) support 100-Gb/s.},
+booktitle = {Proceedings of the 2018 Symposium on Architectures for Networking and Communications Systems},
+pages = {74–88},
+numpages = {15},
+location = {Ithaca, New York},
+series = {ANCS '18},
+selected = {true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@inproceedings{rotornet,
+abbr={RotorNet},
+author = {Mellette, William M. and McGuinness, Rob and Roy, Arjun and Forencich, Alex and Papen, George and Snoeren, Alex C. and Porter, George},
+title = {RotorNet: A Scalable, Low-Complexity, Optical Datacenter Network},
+year = {2017},
+isbn = {9781450346535},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3098822.3098838},
+doi = {10.1145/3098822.3098838},
+html = {https://dl.acm.org/doi/abs/10.1145/3098822.3098838},
+pdf = {rotornet.pdf},
+abstract = {The ever-increasing bandwidth requirements of modern datacenters have led researchers
+to propose networks based upon optical circuit switches, but these proposals face
+significant deployment challenges. In particular, previous proposals dynamically configure
+circuit switches in response to changes in workload, requiring network-wide demand
+estimation, centralized circuit assignment, and tight time synchronization between
+various network elements--- resulting in a complex and unwieldy control plane. Moreover,
+limitations in the technologies underlying the individual circuit switches restrict
+both the rate at which they can be reconfigured and the scale of the network that
+can be constructed.We propose RotorNet, a circuit-based network design that addresses
+these two challenges. While RotorNet dynamically reconfigures its constituent circuit
+switches, it decouples switch configuration from traffic patterns, obviating the need
+for demand collection and admitting a fully decentralized control plane. At the physical
+layer, RotorNet relaxes the requirements on the underlying circuit switches---in particular
+by not requiring individual switches to implement a full crossbar---enabling them
+to scale to 1000s of ports. We show that RotorNet outperforms comparably priced Fat
+Tree topologies under a variety of workload conditions, including traces taken from
+two commercial datacenters. We also demonstrate a small-scale RotorNet operating in
+practice on an eight-node testbed.},
+booktitle = {Proceedings of the Conference of the ACM Special Interest Group on Data Communication},
+pages = {267–280},
+numpages = {14},
+keywords = {optical switching, Datacenter},
+location = {Los Angeles, CA, USA},
+series = {SIGCOMM '17},
+selected = {true}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{terrawatt,
+  abbr = {TerraWatt},
+  author    = {Jennifer Switzer and
+               Rob McGuinness and
+               Pat Pannuto and
+               George Porter and
+               Aaron Schulman and
+               Barath Raghavan},
+  title     = {TerraWatt: Sustaining Sustainable Computing of Containers in Containers},
+  journal   = {CoRR},
+  volume    = {abs/2102.06614},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2102.06614},
+  archivePrefix = {arXiv},
+  eprint    = {2102.06614},
+  timestamp = {Thu, 18 Feb 2021 15:26:00 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2102-06614.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  url = {https://arxiv.org/abs/2102.06614},
+  pdf = {terrawatt.pdf},
+  html = {https://arxiv.org/abs/2102.06614},
+  abstract = {Each day the world inches closer to a climate catastrophe and a
+  sustainability revolution. To avoid the former and achieve the latter we must transform
+  our use of energy. Surprisingly, today's growing problem is that there is too much wind
+  and solar power generation at the wrong times and in the wrong places.
+  We argue for the construction of TerraWatt: a geographically-distributed, large-scale,
+  zero-carbon compute infrastructure using renewable energy and older hardware. Delivering
+  zero-carbon compute for general cloud workloads is challenging due to spatiotemporal power
+  variability. We describe the systems challenges in using intermittent renewable power at
+  scale to fuel such an older, decentralized compute infrastructure.},
+  selected = {true},
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{dark_packets,
+abbr={Dark Packets},
+author = {Thomas, Shelby and McGuinness, Rob and Voelker, Geoffrey M. and Porter, George},
+title = {Dark Packets and the End of Network Scaling},
+year = {2018},
+isbn = {9781450359023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3230718.3230727},
+doi = {10.1145/3230718.3230727},
+pdf = {dark_packets.pdf},
+html = {https://dl.acm.org/doi/abs/10.1145/3230718.3230727},
+abstract = {Today 100GbE network interfaces are commercially available, with 400GbE proposals
+already in the standardization process. In this environment, a major bottleneck is
+DRAM latency, which has stagnated at 100ns per access. Beyond 100GbE, all packet sizes
+will arrive faster than main memory can accommodate, resulting packet drops due to
+the latency incurred by the memory hierarchy.We call these losses caused by the gap
+between cache and DRAM, Dark Packets. We observe that for link rates of 100GbE an
+application making a single memory access causes a high number of packet drops. Today,
+this problem can be overcome by increasing the physical core count (not scalable),
+increasing packet sizes (not generalizable), or by building specialized hardware (high
+cost).In this work, we measure the impact of the dark packet phenomenon and propose
+CacheBuilder, an API to carve out bespoke hardware caches from existing ones through
+simple user level APIs. CacheBuilder allows for explicit control over processor cache
+memory and cache-to-main memory copies by creating application-specific caches that
+result in higher overall performance and reduce dark packets. Our results show that
+for NFVs operating with small packet sizes at 40GbE we reduce dark packets from 35%
+to 0% and only require half the amount of cores to achieve line rates.},
+booktitle = {Proceedings of the 2018 Symposium on Architectures for Networking and Communications Systems},
+pages = {1–14},
+numpages = {14},
+location = {Ithaca, New York},
+series = {ANCS '18},
+selected = {true}
 }
+
